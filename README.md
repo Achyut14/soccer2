@@ -1,20 +1,4 @@
-<!-- # Soccer Match Search API
 
-This is the API for the Soccer Match Search project.
-
-## API Endpoint
-
-You can access the API at the following link:
-
-[API Link](http://localhost:3001)
-
-## Database Schema
-
-The database schema for this project is defined in the `schema.sql` file located in the root directory of this repository.
-
-## Project Setup
-
- -->
 
 # Soccer Match Search 
 
@@ -22,7 +6,7 @@ The database schema for this project is defined in the `schema.sql` file located
 Welcome to the Soccer Stats Dashboard! This application provides real-time statistics on soccer matches, allowing users to explore, analyze, and save match data.
 
 ## Title: Soccer Match Search
-## URL: https://polar-waters-72692-16d627fdc711.herokuapp.com/
+## URL: https://soccer2-25e714201b34.herokuapp.com/
 
 
 ## Features
