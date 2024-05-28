@@ -167,9 +167,7 @@ function App() {
     const lowerCaseQuery = query.toLowerCase();
     const filtered = matches.filter(({ homeTeam, awayTeam }) =>
       homeTeam.name.toLowerCase().includes(lowerCaseQuery) ||
-      awayTeam.name.toLowerCase().includes(lowerCaseQuery) ||
-      (homeTeam.players?.some(player => player.name.toLowerCase().includes(lowerCaseQuery))) ||
-      (awayTeam.players?.some(player => player.name.toLowerCase().includes(lowerCaseQuery)))
+      awayTeam.name.toLowerCase().includes(lowerCaseQuery)
     );
     setFilteredMatches(filtered);
   };
@@ -181,7 +179,7 @@ function App() {
         <nav>
           {!isAuthenticated ? (
             <>
-              <Link to="/signup">Create Account</Link> |
+              <Link to="/signup">Create Account</Link> | 
               <Link to="/login">Login</Link>
             </>
           ) : (
