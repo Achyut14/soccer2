@@ -138,15 +138,15 @@ const PORT = process.env.PORT || 3001;
 
 // Enable CORS for all routes
 app.use(cors({
-  origin: ['https://soccer2-25e714201b34.herokuapp.com'],  // Replace with your actual Heroku app name
+  origin: ['https://soccer2.herokuapp.com'],  // Replace with your actual Heroku app name
   credentials: true,
 }));
 
 app.use(express.json());
 app.use(cookieParser());
 
-const API_URL = 'https://api.football-data.org/v4'; // Ensure this is correct
-const API_TOKEN = process.env.REACT_APP_API_TOKEN; // Ensure this is correct
+const API_URL = process.env.REACT_APP_API_URL;
+const API_TOKEN = process.env.REACT_APP_API_TOKEN;
 
 const authenticateToken = (req, res, next) => {
   const token = req.cookies.token || req.headers['authorization']?.split(' ')[1];
