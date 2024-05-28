@@ -146,7 +146,8 @@ function App() {
     const fetchData = async (date) => {
       try {
         setLoading(true);
-        const response = await fetch(`/matches?date=${date}`);
+        const baseUrl = process.env.REACT_APP_API_URL;  // Ensure this points to your backend server
+        const response = await fetch(`/api/matches?date=${date}`);
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
@@ -159,7 +160,7 @@ function App() {
         setLoading(false);
       }
     };
-
+  
     fetchData(selectedDate);
   }, [selectedDate]);
 
@@ -167,7 +168,9 @@ function App() {
     const lowerCaseQuery = query.toLowerCase();
     const filtered = matches.filter(({ homeTeam, awayTeam }) =>
       homeTeam.name.toLowerCase().includes(lowerCaseQuery) ||
-      awayTeam.name.toLowerCase().includes(lowerCaseQuery)
+      awayTeam.name.toLowerCase().includes(lowerCaseQuery) ||
+      (homeTeam.players?.some(player => player.name.toLowerCase().includes(lowerCaseQuery))) || 
+      (awayTeam.players?.some(player => player.name.toLowerCase().includes(lowerCaseQuery)))
     );
     setFilteredMatches(filtered);
   };
