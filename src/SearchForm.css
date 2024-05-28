@@ -1,0 +1,33 @@
+
+  .search-form {
+    text-align: center;
+  }
+  
+  .search-input {
+    background-color:green;
+    color: white;
+    border: 1px solid black;
+    padding: 8px ;
+    margin-bottom: 8px; 
+
+  }
+  .search-input:hover {
+    background-color: blue;
+  }
+  ::placeholder {
+    color: white;
+  }
+  
+  .search-button {
+    background-color: blue;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .search-button:hover {
+    background-color: darkblue;
+  }
+  

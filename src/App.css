@@ -1,0 +1,48 @@
+
+.container {
+  background-color: #555;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  color: brown;
+  text-align: center;
+}
+h1:hover {
+  color: white;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid black;
+  padding: 10px;
+  /* border-bottom: 1px solid #ddd; */
+}
+
+th {
+  background-color: #555;
+  font-weight: bold;
+}
+
+td {
+  text-align: left;
+}
+
+p {
+  font-size: 16px;
+}
+tr:nth-child(even) {
+  background-color: black; 
+}
+

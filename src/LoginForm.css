@@ -1,0 +1,39 @@
+/* LoginForm.css */
+.form-container {
+    max-width: 400px; /* Limit form width */
+    margin: 20px auto; /* Center the form on the page */
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around the form */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* White background */
+  }
+  
+  .form-container input {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for input */
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 4px; /* Slightly rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in width */
+  }
+  
+  .form-container input::placeholder {
+    color: #888; /* Darker placeholder text for better visibility */
+  }
+  
+  .form-container button {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for button */
+    background-color: #28a745; /* Bootstrap green for the button */
+    color: white; /* White text */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Larger font size for better readability */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .form-container button:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  
