@@ -131,7 +131,7 @@ const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 const cookieParser = require('cookie-parser');
 const path = require('path');
-const pool = require('./db');  // Ensure this path is correct based on your project structure
+const pool = require('./config/db');  // Ensure this path is correct based on your project structure
 
 const app = express();
 const PORT = process.env.PORT || 3001;
